@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#board{
+    height: 30vh;
+    width: 30vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.space{
+    border: 1px solid black;
+    height: 10vh;
+    width: 10vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
