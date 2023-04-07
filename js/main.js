@@ -27,6 +27,7 @@ function handleSpaceClick(e){
 function newGame(){
     for(i=0; i<spaces.length; i++){
         currentPlayer = 'X';
+        board = ['', '', '', '', '', '', '', '', ''];
         statusDiv.innerHTML = '';
         spaces[i].innerHTML = '';
         spaces[i].addEventListener('click', handleSpaceClick);
@@ -44,9 +45,7 @@ function validate(){
         
         if(a === ''||b === ''||c === ''){
             continue;
-        }
-        if(a === b && b === c){
-            statusDiv.innerHTML = currentPlayer + ' wins!';
+        }else if(a === b && b === c){
             handleWin();
             break;
         }
@@ -54,6 +53,7 @@ function validate(){
 }
 
 function handleWin(){
+    statusDiv.innerHTML = currentPlayer + ' wins!';
     for(i=0; i<spaces.length; i++){
         spaces[i].removeEventListener('click', handleSpaceClick);
     }

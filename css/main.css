@@ -5,17 +5,22 @@
     scroll-behavior: smooth;
 }
 
+body{
+    text-align: center;
+}
+
 #board{
-    height: 30vh;
-    width: 30vh;
+    height: 60vh;
+    width: 60vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: auto;
 }
 
 .space{
     border: 1px solid black;
-    height: 10vh;
-    width: 10vh;
+    height: 20vh;
+    width: 20vh;
     display:flex;
     align-items: center;
     justify-content: center;
