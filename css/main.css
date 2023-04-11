@@ -9,6 +9,17 @@ body{
     text-align: center;
 }
 
+#home{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: larger;
+}
+
+#home a{
+    text-decoration: none;
+}
+
 #board{
     height: 60vh;
     width: 60vh;
